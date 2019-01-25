@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/selectview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/leftHandle"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/left"
+            android:layout_alignParentLeft="true"/>
+        <View
+            android:id="@+id/timeSpanShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/leftHandle"
+            android:layout_toLeftOf="@+id/rightHandle"
+            android:background="#805db5ff">
+        </View>
+
+        <ImageView
+            android:id="@+id/rightHandle"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/right"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>
